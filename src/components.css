@@ -42,6 +42,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 17rem));
   gap: var(--grid-gap);
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
 }
 
 .grid-item-main {
