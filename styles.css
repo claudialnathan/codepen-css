@@ -585,7 +585,9 @@ body {
 
 .grid-item-end {
   display: flex;
-  padding: 0 var(--s4) var(--s8) var(--s4) var(--s8);
+  flex-direction: row;
+  padding: var(--s8);
   justify-content: flex-start;
   align-items: center;
+  font-size: 13px;
 }
