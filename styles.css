@@ -12,10 +12,12 @@
   --text-subtle: light-dark(#71717b, #ababab);
   --border-color: light-dark(#d9d9d9, #2b2b2d);
   --links: light-dark(#0037ff, #aa99ff);
+
   --btn-main: light-dark(#d0fc95, #d0fc95);
   --btn-main-text: light-dark(#202020, #202020);
   --btn-dark: light-dark(#202020, #2b2c3b);
   --btn-dark-text: light-dark(#ffffff, #ffffff);
+  --card-main-bg: light-dark(#faf9fb, #212127);
 
   --s2: 2px;
   --s4: 4px;
@@ -558,4 +560,5 @@ body {
   border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--radius-16);
   padding: var(--s6);
+  max-width: 15rem;
 }
