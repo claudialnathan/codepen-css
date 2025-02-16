@@ -13,9 +13,8 @@ body {
 .card {
   background-color: var(--surface);
   border: var(--border-width) var(--border-style) var(--border-color);
-  border-radius: var(--radius-16);
+  border-radius: 12px;
   padding: var(--s6);
-  max-width: 15rem;
 }
 
 .grid-main {
