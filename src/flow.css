@@ -1,0 +1,53 @@
+:root {
+  --s2: 2px;
+  --s4: 4px;
+  --s6: 6px;
+  --s10: 10px;
+  --s12: 12px;
+  --s14: 0.875rem;
+  --s16: 1rem;
+  --s18: 1.125rem;
+  --s20: 1.25rem;
+  --s24: clamp(1.34rem, 1.294rem + 0.23vw, 1.5rem);
+  --s26: clamp(1.375rem, 1.303rem + 0.36vw, 1.625rem);
+  --s28: clamp(1.475rem, 1.397rem + 0.39vw, 1.75rem);
+  --s32: clamp(1.7rem, 1.614rem + 0.43vw, 2rem);
+  --s34: clamp(1.81rem, 1.72rem + 0.45vw, 2.125rem);
+  --s36: clamp(1.91rem, 1.812rem + 0.49vw, 2.25rem);
+  --s40: clamp(2.125rem, 2.017rem + 0.54vw, 2.5rem);
+  --s44: clamp(2.34rem, 2.222rem + 0.59vw, 2.75rem);
+  --s48: clamp(2.55rem, 2.422rem + 0.64vw, 3rem);
+  --s56: clamp(2.975rem, 2.825rem + 0.75vw, 3.5rem);
+  --s64: clamp(3.4rem, 3.228rem + 0.86vw, 4rem);
+  --s72: clamp(3.825rem, 3.633rem + 0.96vw, 4.5rem);
+  --s80: clamp(4.25rem, 4.036rem + 1.07vw, 5rem);
+  --s96: clamp(5.1rem, 4.842rem + 1.29vw, 6rem);
+  --s192: clamp(10.2rem, 9.686rem + 2.57vw, 12rem);
+  --s256: clamp(13.6rem, 12.914rem + 3.43vw, 16rem);
+}
+
+/*----------- flow ------------*/
+:where([class*="l-stack-"]) {
+  gap: var(--layout--gap, 1.5rem);
+  height: 100%;
+}
+
+.l-stack > * + * {
+  margin-block-start: var(--layout--gap);
+}
+
+.l-stack-sm > * + * {
+  margin-block-start: var(--layout--gap-sm);
+}
+
+.l-stack-md > * + * {
+  margin-block-start: var(--layout--gap-md);
+}
+
+.l-stack-lg > * + * {
+  margin-block-start: var(--layout--gap-lg);
+}
+
+:where([class*="l-row"]) {
+  gap: var(--layout--gap, 1.5rem);
+}

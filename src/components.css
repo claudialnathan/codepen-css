@@ -1,0 +1,25 @@
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.btn {
+  background-color: var(--btn-main);
+  color: var(--btn-main-text);
+  border-radius: var(--radius-5);
+  font-size: var(--txt-size-sm);
+}
+
+.btn-dark {
+  background-color: var(--btn-dark);
+  color: var(--btn-dark-text);
+  border-radius: var(--radius-5);
+  font-size: var(--txt-size-sm);
+}
+
+.card {
+  background-color: var(--surface);
+  border: var(--border-width) var(--border-style) var(--border-color);
+  border-radius: var(--radius-16);
+  padding: var(--s6);
+}

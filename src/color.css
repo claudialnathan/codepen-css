@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light dark;
+
+  --lime: #d0fc95;
+  --lazuli: #0037ff;
+  --teal: D0FBC6;
+  --dark: #202020;
+
+  --background: light-dark(#faf9fb, #111111);
+  --surface: light-dark(white, #1a1a1c);
+  --text: light-dark(#202020, white);
+  --text-subtle: light-dark(#71717b, #ababab);
+  --border-color: light-dark(#d9d9d9, #2b2b2d);
+  --links: light-dark(#0037ff, #aa99ff);
+  --btn-main: light-dark(#d0fc95, #d0fc95);
+  --btn-main-text: light-dark(#202020, #202020);
+  --btn-dark: light-dark(#202020, #2b2c3b);
+  --btn-dark-text: light-dark(#ffffff, #ffffff);
+}

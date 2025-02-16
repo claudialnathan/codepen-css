@@ -1,0 +1,43 @@
+/* ------- border ------- */
+
+:root {
+  --border-width: 1px;
+  --border-style: solid;
+  --radius-3: 3px;
+  --radius-5: 5px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+}
+
+.u-border-default {
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+}
+
+.u-border-rd-3 {
+  border-radius: var(--radius-3);
+}
+
+.u-border-rd-5 {
+  border-radius: var(--radius-5);
+}
+
+.u-border-rd-16 {
+  border-radius: var(--radius-16);
+}
+
+.u-border-rd-24 {
+  border-radius: var(--radius-24);
+}
+
+/* ------- hide ------- */
+.u_hide-if-empty:empty,
+.u_hide-if-empty:not(:has(> :not(.w-condition-invisible))),
+.u_hide-if-empty-cms:not(:has(.w-dyn-item)),
+.w-richtext[class*="u_text-style-"]
+  > :not(h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, span),
+.u_embed-js,
+.u_embed-css {
+  display: none !important;
+}

@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--links);
+  caret-color: var(--links);
+}
+
+::selection {
+  background: var(--_color---ui--select);
+  color: var(--_color---ui--select-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  touch-action: manipulation;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* creates new stacking context on the main content wrapper */
+.page_main {
+  isolation: isolate;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+a:not([class]) {
+  color: var(--links);
+}
+
+:where(input, textarea, select, label) {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* unset list defaults where class applied */
+
+ul:where([class]),
+ol:where([class]) {
+  list-style: "";
+  padding-left: 0;
+}
+
+/* ------- media defaults ------- */
+
+img::selection {
+  background: transparent;
+}
+
+:where(img, video, svg, picture) {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* ------- misc ------- */
+
+[hidden] + * {
+  margin-top: 0 !important;
+}
+
+/* remove margins from first and last divs */
+
+* > :first-child {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+* > :last-child {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+}
