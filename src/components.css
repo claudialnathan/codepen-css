@@ -69,3 +69,13 @@
   align-items: center;
   font-size: 14px;
 }
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: top;
+  gap: var(--s24);
+  margin: 0 auto;
+}
