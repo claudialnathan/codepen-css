@@ -562,3 +562,30 @@ body {
   padding: var(--s6);
   max-width: 15rem;
 }
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--grid-gap);
+}
+
+.grid-item-main {
+  background-color: var(--card-main-bg);
+  position: relative;
+  display: flex;
+  overflow: clip;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: var(--s8);
+  text-align: center;
+}
+
+.grid-item-end {
+  display: flex;
+  padding: 0 var(--s4) var(--s8) var(--s4) var(--s8);
+  justify-content: flex-start;
+  align-items: center;
+}

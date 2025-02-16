@@ -3,13 +3,6 @@ body {
   color: var(--text);
 }
 
-.btn {
-  background-color: var(--btn-main);
-  color: var(--btn-main-text);
-  border-radius: var(--radius-5);
-  font-size: var(--txt-size-sm);
-}
-
 .btn-dark {
   background-color: var(--btn-dark);
   color: var(--btn-dark-text);
@@ -22,4 +15,32 @@ body {
   border: var(--border-width) var(--border-style) var(--border-color);
   border-radius: var(--radius-16);
   padding: var(--s6);
+  max-width: 15rem;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--grid-gap);
+}
+
+.grid-item-main {
+  background-color: var(--card-main-bg);
+  position: relative;
+  display: flex;
+  overflow: clip;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: var(--s8);
+  text-align: center;
+}
+
+.grid-item-end {
+  display: flex;
+  padding: 0 var(--s4) var(--s8) var(--s4) var(--s8);
+  justify-content: flex-start;
+  align-items: center;
 }
